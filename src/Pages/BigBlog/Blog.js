@@ -1,10 +1,10 @@
 import React, {useMemo, useState} from "react";
 
-import PostList from "./BigBlog/PostList";
-import MyButton from "./BigBlog/UI/button/MyButton";
-import PostForm from "./BigBlog/PostForm";
-import PostFilter from "./BigBlog/PostFilter";
-import MyModal from "./BigBlog/UI/MyModal/MyModal";
+import PostList from "./components/PostList";
+import MyButton from "./components/UI/button/MyButton";
+import PostForm from "./components/PostForm";
+import PostFilter from "./components/PostFilter";
+import MyModal from "./components/UI/MyModal/MyModal";
 import './Blog.css'
 
 function Blog() {
@@ -38,13 +38,12 @@ function Blog() {
 
     return (
         <div className="Blog">
-            <MyButton style={{marginTop:30}} onClick={()=>setModal(true)}>
+            <MyButton  onClick={()=>setModal(true)}>
                 Написать комментарий
             </MyButton>
             <MyModal visible={modal} setVisible={setModal}>
                 <PostForm create={createPost}/>
             </MyModal>
-            <hr style={{margin: '15px 0'}}/>
             <PostFilter
                 filter={filter}
                 setFilter={setFilter}

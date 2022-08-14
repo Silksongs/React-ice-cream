@@ -7,8 +7,3 @@ ReactDOM.render(
     document.getElementById(`root`)
 
 );
-ReactDOM.render(
-    document.getElementById(`blog`)
-
-);
-

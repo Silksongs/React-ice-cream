@@ -1,0 +1,15 @@
+.Navlink{
+    color: black;
+    margin: 10px;
+    background-color: pink;
+    border-radius: 10px;
+}
+.IMG{
+    margin: 10px;
+    width: 50%;
+    border-radius: 20px;
+}
+.TEXT-TAB{
+    font-size: xx-large;
+    font-weight: 500;
+}

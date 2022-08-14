@@ -1,21 +1,17 @@
 import React, {Component} from 'react';
-import {Button, Container, Form, FormControl, Nav, Navbar} from "react-bootstrap";
-import logo from './icone.png'
+import {Container, Nav, Navbar} from "react-bootstrap";
+import logo from '../../assets/icone.png'
 import './Header.css'
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-import {Routes} from "react-router";
-import Home from "../Pages/Home";
-import About from "../Pages/About";
-import Contacts from "../Pages/Contacts";
-import Blog from "../Pages/Blog";
+import {BrowserRouter as Router, Link} from "react-router-dom";
+import Navigation from "../Navigation/Navigation";
 
 
-export default class Header extends Component {
-    render() {
+export default function Header() {
+
         return (
             <>
                 <Router>
-                    <Navbar style={{background: 'pink'}} collapseOnSelect expand="md" variant="light">
+                    <Navbar className={'Hed'} collapseOnSelect expand="md" variant="light">
                         <Container>
                             <Navbar.Brand as={Link} to="/">
                                 <img
@@ -25,10 +21,10 @@ export default class Header extends Component {
                                     className="d-inline-block align-top"
                                     alt="Logo"
                                 />
-                                <b style={{color: 'black'}}>Мороженка</b>
+                                <b className={'Logo'}>Мороженка</b>
                             </Navbar.Brand>
                             <Navbar.Collapse className="d-flex flex-row-reverse">
-                                <Nav className="p-2" style={{fontWeight: 'bold'}}>
+                                <Nav className={'Nava'}>
                                     <Nav.Link as={Link} to="/">Главная</Nav.Link>
                                     <Nav.Link as={Link} to="/about">Ассортимент</Nav.Link>
                                     <Nav.Link as={Link} to="/contacts">Контакты</Nav.Link>
@@ -37,14 +33,9 @@ export default class Header extends Component {
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>
-                    <Routes>
-                        <Route path='/' element={<Home/>}/>
-                        <Route path='/about' element={<About/>}/>
-                        <Route path='/contacts' element={<Contacts/>}/>
-                        <Route path='/blog' element={<Blog/>}/>
-                    </Routes>
+                    <Navigation/>
                 </Router>
             </>
         );
-    }
+
 }
