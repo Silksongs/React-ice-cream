@@ -1,10 +1,10 @@
 import React, {useMemo, useState} from "react";
 
-import PostList from "./components/PostList";
-import MyButton from "./components/UI/button/MyButton";
-import PostForm from "./components/PostForm";
-import PostFilter from "./components/PostFilter";
-import MyModal from "./components/UI/MyModal/MyModal";
+import PostList from "../../Components/Blog/PostList";
+import MyButton from "../../Components/Blog/UI/button/MyButton";
+import PostForm from "../../Components/Blog/PostForm";
+import PostFilter from "../../Components/Blog/PostFilter";
+import MyModal from "../../Components/Blog/UI/MyModal/MyModal";
 import './Blog.css'
 
 function Blog() {
@@ -13,8 +13,10 @@ function Blog() {
         {id: 2, title: 'Александр Зиборов', body: 'Вместо 1 банки мороженого положили 10 !'},
         {id: 3, title: 'Алина Порхунова', body: 'Мороженка лучший бренд мороженого в РФ !!!'}
     ])
+
     const [filter, setFilter] = useState({sort: '', query: ''})
-    const [modal,setModal] = useState(false)
+
+    const [modal, setModal] = useState(false)
 
     const sortedPosts = useMemo(() => {
         if (filter.sort) {
@@ -38,7 +40,7 @@ function Blog() {
 
     return (
         <div className="Blog">
-            <MyButton  onClick={()=>setModal(true)}>
+            <MyButton onClick={() => setModal(true)}>
                 Написать комментарий
             </MyButton>
             <MyModal visible={modal} setVisible={setModal}>
@@ -52,4 +54,5 @@ function Blog() {
         </div>
     );
 }
+
 export default Blog;
