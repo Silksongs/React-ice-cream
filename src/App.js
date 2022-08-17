@@ -1,17 +1,21 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
+import Footer from "./Components/Footer";
+import Navigation from "./Components/Navigation";
 import {BrowserRouter} from "react-router-dom";
+import Header from "./Components/Header";
 
 function App() {
     return (
-        <BrowserRouter>
-            <div>
+
+        <div>
+            <BrowserRouter>
                 <Header/>
+                <Navigation/>
                 <Footer/>
-            </div>
-        </BrowserRouter>
+            </BrowserRouter>
+        </div>
+
     );
 }
 

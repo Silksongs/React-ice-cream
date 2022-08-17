@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import ice1 from '../../assets/1.jpg';
 import ice2 from '../../assets/2.jpg';
 import ice3 from '../../assets/3.jpg';
-import './CarouselBox.css'
+import './CarouselFunction/CarouselFunction.css'
 import CarouselFunction from "./CarouselFunction";
 
 function CarouselBox() {

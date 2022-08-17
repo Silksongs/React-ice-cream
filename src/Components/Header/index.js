@@ -2,7 +2,6 @@ import React from 'react';
 import {Container, Nav, Navbar} from "react-bootstrap";
 import './Header.css'
 import {Link} from "react-router-dom";
-import Navigation from "../Navigation/Navigation";
 import NavaBrand from "../Navigation/NavaBrand";
 
 
@@ -23,7 +22,6 @@ export default function Header() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <Navigation/>
         </div>
     );
 }
