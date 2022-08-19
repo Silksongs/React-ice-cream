@@ -1,8 +1,8 @@
 import React from 'react';
 import {Container, Nav, Navbar} from "react-bootstrap";
-import './Header.css'
+import './style.css'
 import {Link} from "react-router-dom";
-import NavaBrand from "../Navigation/NavaBrand";
+import NavaBrand from "../navigation/navaBrand";
 
 
 export default function Header() {

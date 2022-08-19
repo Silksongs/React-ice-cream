@@ -13,7 +13,7 @@ function Assort({src, label, price, description, text1, text2}) {
                 <h4>Пищевая ценность на 100 гр. :</h4>
                 <p>{text2}</p>
                 <h4>Аллергены:</h4>
-                <p>лактоза, сахар, фрукты.</p><br/><br/>
+                <p>лактоза, сахар, фрукты.</p>
             </div>
         </div>
     );

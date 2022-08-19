@@ -13,7 +13,7 @@ const NavaBrand = () => {
                 className="d-inline-block align-top"
                 alt="Logo"
             />
-            <b className={'Logo'}>Мороженка</b>
+            <b>Мороженка</b>
         </Navbar.Brand>
     );
 };

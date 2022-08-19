@@ -1,15 +1,16 @@
 import React from 'react';
-import PostItem from "./PostItem";
+import PostItem from "../postItem";
+import './style.css'
 
 const PostList = ({posts,title, remove}) => {
     if(!posts.length){
-        return (<h1 style={{textAlign: 'center'}}>Комментарии не найдены!</h1>)
+        return (<h2  className={'Title'} >Комментарии не найдены!</h2>)
     }
     return (
         <div>
-            <h1 style={{textAlign:'center'}}>
+            <h2 className={'Title'}>
                 {title}
-            </h1>
+            </h2>
             {posts.map((post,index) =>
                 <PostItem remove={remove} number={index+1} post={post} key={post.id}/>
             )}

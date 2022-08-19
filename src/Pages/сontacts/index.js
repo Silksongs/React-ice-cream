@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Form, Button} from "react-bootstrap";
-import './Contacts.css'
-import CompContacts from "../../Components/Contacts";
+import './style.css'
+import CompContacts from "../../Components/contacts";
 
 function Contacts() {
 

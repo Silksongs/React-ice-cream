@@ -1,17 +1,16 @@
 import React from 'react';
 
-function HomeComp(props) {
+function HomeComp({text1,text2,text3}) {
     return (
 
         <div>
-            <p className={'Text'}>{props.text1}</p>
+            <p className={'Text'}>{text1}</p>
             <p>
-                {props.text2}
+                {text2}
                 <br/>
-                {props.text3}
-            </p><br/><br/>
+                {text3}
+            </p>
         </div>
-
     );
 }
 

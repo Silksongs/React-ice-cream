@@ -1,9 +1,9 @@
-import ice1 from "../assets/11.jpg";
-import ice2 from "../assets/22.jpg";
-import ice3 from "../assets/33.jpg";
-import ice4 from "../assets/44.jpg";
-import ice5 from "../assets/55.jpg";
-import ice6 from "../assets/66.jpg";
+import ice1 from "../../assets/11.jpg";
+import ice2 from "../../assets/22.jpg";
+import ice3 from "../../assets/33.jpg";
+import ice4 from "../../assets/44.jpg";
+import ice5 from "../../assets/55.jpg";
+import ice6 from "../../assets/66.jpg";
 
 const assor = [
     {

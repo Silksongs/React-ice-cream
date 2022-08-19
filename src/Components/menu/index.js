@@ -1,13 +1,13 @@
 import React from 'react';
 import _ from "lodash";
-import assor from "../../data/assort";
+import assor from "../../data/assortment/assort";
 
-import Nava from "./Nava";
-import {Col} from "react-bootstrap";
+import Nava from "./nava";
+
 
 function Menu() {
     return (
-        <Col sm={3}>
+        <div>
             {_.map(assor, (el) => {
                 return (
                     <Nava eventKey={el.eventKey}
@@ -15,7 +15,7 @@ function Menu() {
                     />
                 )
             })}
-        </Col>
+        </div>
     );
 }
 

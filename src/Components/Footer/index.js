@@ -1,12 +1,12 @@
 import React from 'react';
 import {Container, Nav, Navbar} from "react-bootstrap";
-import './Footer.css'
-import NavaBrand from "../Navigation/NavaBrand";
+import './style.css'
+import NavaBrand from "../navigation/navaBrand";
 
 function Footer() {
 
     return (
-        <div className="fixed-bottom">
+        <div className="">
             <Navbar className="NavBarFooter" collapseOnSelect expand="md" variant="light">
                 <Container>
                     <NavaBrand/>

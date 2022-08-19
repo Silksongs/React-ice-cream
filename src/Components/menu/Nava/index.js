@@ -1,6 +1,6 @@
 import React from 'react';
 import {Nav} from "react-bootstrap";
-import './Nava.css'
+import './style.css'
 
 function Nava(props) {
     return (

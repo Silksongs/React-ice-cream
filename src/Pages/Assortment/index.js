@@ -1,9 +1,9 @@
 import React from 'react';
 import {Col, Container, Row, TabContainer, TabContent, TabPane} from "react-bootstrap";
-import Assort from "../../Components/Assortment";
-import '../../Components/Assortment/Assortment.css'
+import Assort from "../../Components/assortment";
+import '../../Components/assortment/style.css'
 import _ from "lodash";
-import assor from "../../data/assort";
+import assor from "../../data/assortment/assort";
 import Menu from "../../Components/menu";
 
 function Assortment() {
@@ -12,7 +12,9 @@ function Assortment() {
         <Container>
             <TabContainer id="left-tabs-example" defaultActiveKey="first">
                 <Row>
-                    <Menu/>
+                    <Col sm={3}>
+                        <Menu/>
+                    </Col>
                     <Col sm={9}>
                         <TabContent>
                             {_.map(assor, (el) => {

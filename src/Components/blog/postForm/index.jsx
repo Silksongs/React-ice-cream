@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import MyInput from "./UI/input/MyInput";
-import MyButton from "./UI/button/MyButton";
+import MyInput from "../ui/input";
+import MyButton from "../ui/button";
 
 const PostForm = ({create}) => {
     const[post,setPost]=useState({title:'',body:''})
@@ -21,7 +21,6 @@ const PostForm = ({create}) => {
                 type="text"
                 placeholder={"Ваши инициалы "}/>
 
-            {/*Неуправляемый\Неконтролируемый компонент*/}
             <MyInput
                 value={post.body}
                 onChange={e=>setPost({...post,body: e.target.value})}

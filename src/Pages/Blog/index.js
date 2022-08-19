@@ -1,11 +1,11 @@
 import React, {useMemo, useState} from "react";
 
-import PostList from "../../Components/Blog/PostList";
-import MyButton from "../../Components/Blog/UI/button/MyButton";
-import PostForm from "../../Components/Blog/PostForm";
-import PostFilter from "../../Components/Blog/PostFilter";
-import MyModal from "../../Components/Blog/UI/MyModal/MyModal";
-import './Blog.css'
+import PostList from "../../Components/blog/postList";
+import MyButton from "../../Components/blog/ui/button";
+import PostForm from "../../Components/blog/postForm";
+import PostFilter from "../../Components/blog/postFilter";
+import MyModal from "../../Components/blog/ui/myModal";
+import './style.css'
 
 function Blog() {
     const [posts, setPosts] = useState([
@@ -40,9 +40,7 @@ function Blog() {
 
     return (
         <div className="Blog">
-            <MyButton onClick={() => setModal(true)}>
-                Написать комментарий
-            </MyButton>
+
             <MyModal visible={modal} setVisible={setModal}>
                 <PostForm create={createPost}/>
             </MyModal>

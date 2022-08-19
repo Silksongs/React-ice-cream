@@ -1,10 +1,11 @@
 import React from 'react';
-import MyInput from "./UI/input/MyInput";
-import MySelect from "./UI/select/MySelect";
+import MyInput from "../ui/input";
+import MySelect from "../ui/select";
 
 const PostFilter = ({filter, setFilter}) => {
     return (
         <div>
+            <br/>
             <MyInput
                 value={filter.query}
                 onChange={e => setFilter({...filter, query: e.target.value})}
