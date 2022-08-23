@@ -1,10 +1,10 @@
 import React from 'react';
 import {Route} from "react-router-dom";
 import {Routes} from "react-router";
-import Home from "../../Pages/home";
-import Assortment from "../../Pages/assortment";
-import Contacts from "../../Pages/сontacts";
-import Blog from "../../Pages/blog";
+import Home from "../../pages/home";
+import Assortment from "../../pages/assortment";
+import Contacts from "../../pages/сontacts";
+import Blog from "../../pages/blog";
 
 function Navigation() {
     return (

@@ -6,7 +6,7 @@ function Nava(props) {
     return (
         <Nav className="flex-column mt-2 ">
             <Nav.Item>
-                <Nav.Link className={'Navlink'}
+                <Nav.Link className={'navlink'}
                           eventKey={props.eventKey}>{props.text1}</Nav.Link>
             </Nav.Item>
         </Nav>

@@ -7,8 +7,8 @@ function Contacts() {
 
     return (
         <div>
-            <Container className={'Conn'}>
-                <text className={'Text'}>Оставьте ваши контакты для связи с вами</text>
+            <Container className={'conn'}>
+                <text className={'text'}>Оставьте ваши контакты для связи с вами</text>
                 <Form>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Введите ваш Email </Form.Label>
@@ -31,12 +31,7 @@ function Contacts() {
                     <Button className={'group'} variant="primary" type="submit">Отправить</Button>
                 </Form>
             </Container>
-            <CompContacts
-                text1={"с 8-00 до 22-00 "}
-                text2={"Без выходных, без обедов"}
-                herf1={"tel:+79164690150"} text3={"+7 (916) 469-01-50"}
-                herf2={"mailto:Taksaland@yandex.ru"} text4={"Taksaland@yandex.ru"}
-            />
+            <CompContacts/>
         </div>
     );
 

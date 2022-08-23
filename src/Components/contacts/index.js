@@ -2,17 +2,17 @@ import React from 'react';
 import {Container} from "react-bootstrap";
 import './style.css'
 
-function CompContacts(props) {
+function CompContacts() {
     return (
-        <Container className={'Conn'}>
-            <text className={'Text'}>Наши контакты</text>
+        <Container className={'conn'}>
+            <text className={'text'}>Наши контакты</text>
             <h2>Режим работы:</h2>
-            <p>{props.text1}</p>
-            <p>{props.text2}</p>
+            <p>с 8-00 до 22-00</p>
+            <p>Без выходных, без обедов</p>
             <h2>Телефон горячей линии</h2>
-            <a href={props.herf1}>{props.text3}</a>
+            <a href='tel:+79164690150"'>+7 (916) 469-01-50</a>
             <h2>Электронная почта</h2>
-            <p><a href={props.herf2}>{props.text4}</a></p><br/>
+            <p><a href='mailto:Taksaland@yandex.ru'>Taksaland@yandex.ru</a></p><br/>
         </Container>
     );
 }

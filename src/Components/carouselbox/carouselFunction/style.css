@@ -6,6 +6,7 @@
     --color-4: #e83611;
     --color-5: #f9002f;
 }
+
 .colored {
     /* настраиваем внешний вид шрифта */
     font-family: sans-serif;
@@ -35,6 +36,7 @@
     color: transparent;
 
 }
-.h3{
-    color: rgb(200,100,100);
+
+.h3 {
+    color: rgb(200, 100, 100);
 }

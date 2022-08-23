@@ -1,6 +1,6 @@
 import React from 'react';
 import CarouselBox from "../../Components/carouselbox";
-import {Container, TabContent} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import '../../Components/home/style.css'
 import HomeComp from "../../Components/home";
 import _ from "lodash";
@@ -13,15 +13,15 @@ function Home() {
             <CarouselBox/>
             <Container>
                 <article>
-                        {_.map(home,(el)=>{
-                            return(
-                                <HomeComp
-                                    text1={el.text1}
-                                    text2={el.text2}
-                                    text3={el.text3}
-                                />
-                            )
-                        })}
+                    {_.map(home, (el) => {
+                        return (
+                            <HomeComp
+                                text1={el.text1}
+                                text2={el.text2}
+                                text3={el.text3}
+                            />
+                        )
+                    })}
                 </article>
             </Container>
         </div>

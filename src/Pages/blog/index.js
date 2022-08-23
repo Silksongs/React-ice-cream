@@ -1,7 +1,6 @@
 import React, {useMemo, useState} from "react";
 
 import PostList from "../../Components/blog/postList";
-import MyButton from "../../Components/blog/ui/button";
 import PostForm from "../../Components/blog/postForm";
 import PostFilter from "../../Components/blog/postFilter";
 import MyModal from "../../Components/blog/ui/myModal";
@@ -39,7 +38,7 @@ function Blog() {
     }
 
     return (
-        <div className="Blog">
+        <div className="blog">
 
             <MyModal visible={modal} setVisible={setModal}>
                 <PostForm create={createPost}/>

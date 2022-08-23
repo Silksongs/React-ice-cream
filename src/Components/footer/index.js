@@ -7,13 +7,13 @@ function Footer() {
 
     return (
         <div className="">
-            <Navbar className="NavBarFooter" collapseOnSelect expand="md" variant="light">
+            <Navbar className="navBarFooter" collapseOnSelect expand="md" variant="light">
                 <Container>
                     <NavaBrand/>
                     <Navbar.Collapse className="d-flex flex-row-reverse">
-                        <Nav className={'Nava'}>
-                            <a className={'Aherf'} href="https://github.com/Silksongs">GitHub</a>
-                            <a className={'Aherf'} href="https://vk.com/inerva">Vk</a>
+                        <Nav className={'nava'}>
+                            <a className={'aherf'} href="https://github.com/Silksongs">GitHub</a>
+                            <a className={'aherf'} href="https://vk.com/inerva">Vk</a>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
