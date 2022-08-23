@@ -1,9 +1,9 @@
 import React, {useMemo, useState} from "react";
 
-import PostList from "../../Components/blog/postList";
-import PostForm from "../../Components/blog/postForm";
-import PostFilter from "../../Components/blog/postFilter";
-import MyModal from "../../Components/blog/ui/myModal";
+import PostList from "../../components/blog/postList";
+import PostForm from "../../components/blog/postForm";
+import PostFilter from "../../components/blog/postFilter";
+import MyModal from "../../components/blog/ui/myModal";
 import './style.css'
 
 function Blog() {

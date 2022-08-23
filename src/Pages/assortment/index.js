@@ -1,8 +1,8 @@
 import React from 'react';
 import {Col, Container, Row, TabContainer} from "react-bootstrap";
-import Assort from "../../Components/assortment";
-import '../../Components/assortment/style.css'
-import Menu from "../../Components/menu";
+import Assort from "../../components/assortment";
+import '../../components/assortment/style.css'
+import Menu from "../../components/menu";
 
 function Assortment() {
 

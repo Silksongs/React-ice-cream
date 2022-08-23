@@ -1,8 +1,8 @@
 import React from 'react';
-import CarouselBox from "../../Components/carouselbox";
+import CarouselBox from "../../components/carouselbox";
 import {Container} from "react-bootstrap";
-import '../../Components/home/style.css'
-import HomeComp from "../../Components/home";
+import '../../components/home/style.css'
+import HomeComp from "../../components/home";
 
 function Home() {
 

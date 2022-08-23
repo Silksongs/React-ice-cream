@@ -1,9 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Footer from "./Components/footer";
-import Navigation from "./Components/navigation";
+import Footer from "./components/footer";
+import Navigation from "./components/navigation";
 import {BrowserRouter} from "react-router-dom";
-import Header from "./Components/header";
+import Header from "./components/header";
 import './style.css'
 
 function App() {
