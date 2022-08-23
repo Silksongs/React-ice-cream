@@ -1,16 +1,24 @@
 import React from 'react';
+import _ from "lodash";
+import home from "../../data/home/home";
 
-function HomeComp({text1, text2, text3}) {
+function HomeComp() {
     return (
+        <article>
+            {_.map(home, (el) => {
+                return (
+                    <div>
+                        <p className={'text'}>{el.text1}</p>
+                        <p>
+                            {el.text2}
+                            <br/>
+                            {el.text3}
+                        </p>
+                    </div>
+                )
+            })}
+        </article>
 
-        <div>
-            <p className={'text'}>{text1}</p>
-            <p>
-                {text2}
-                <br/>
-                {text3}
-            </p>
-        </div>
     );
 }
 
